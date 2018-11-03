@@ -7,6 +7,7 @@ x = torch.unsqueeze(torch.linspace(-1, 1, 100), dim=1)
 # 生成的y值为x的平方加上随机数
 y = x.pow(2) + 0.2*torch.rand(x.size())
 
+
 # 用 Variable 来修饰这些数据 tensor
 x = torch.autograd.Variable(x)
 y = torch.autograd.Variable(y)
